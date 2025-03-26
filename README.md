@@ -20,7 +20,7 @@ Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar minha
   <img align="center" alt="git" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"/>
 </div>
 
-## Processos 
+## Processos Ferramentais
 
 - ⚛️ **React** – Biblioteca para construção da interface  
 - 💅 **Styled-Components** – Estilização moderna e dinâmica  
