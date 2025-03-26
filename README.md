@@ -6,7 +6,7 @@ Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar minha
 ---
 
 ## 📸 Preview  
-![Portfolio Preview]([https://via.placeholder.com/1000x500](https://drive.google.com/drive/folders/1xTlUEB8Vv10mUhEIpriIzRccekzwkdLy))  
+![Portfolio Preview](https://drive.google.com/drive/folders/1xTlUEB8Vv10mUhEIpriIzRccekzwkdLy)  
 
 ---
 
