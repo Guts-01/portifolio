@@ -2,11 +2,11 @@
 
 Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos e formas de contato.  
 
-🔗 **Acesse o projeto online:** [seu-portfolio.vercel.app](https://guto-oliveira-portifolio.vercel.app/)
+🔗 **Acesse o projeto online:** [Guto-oliveira](https://guto-oliveira-portifolio.vercel.app/)
 ---
 
 ## 📸 Preview  
-![Portfolio Preview](https://via.placeholder.com/1000x500?text=Adicione+uma+imagem+do+seu+portfolio)  
+![Portfolio Preview](https://via.placeholder.com/1000x500)  
 
 ---
 
