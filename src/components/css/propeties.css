@@ -1,0 +1,10 @@
+.dashed{
+    border: 1px dashed var(--corTexto);
+}
+.dashed_modal{
+    border: 1px solid #303030;
+}
+
+.dashed_modal_info{
+    border: 1px dashed #303030;;
+}
