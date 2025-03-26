@@ -30,7 +30,6 @@ Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar minha
 # 🌎 Contato
 ### Se quiser bater um papo ou colaborar em projetos, me encontre aqui:
 
-#### 📧 E-mail: oliveriraguto4@gmail.com
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/guts.okx/)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guto-oliveira-227580294/)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:oliveriraguto4.com)
