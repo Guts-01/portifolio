@@ -6,6 +6,7 @@ Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar minha
 ---
 
 ## 📸 Preview  
+---
 ![Portfolio Preview](https://i.postimg.cc/j51m578v/Captura-de-tela-2025-03-25-222024.png)
 
 ---
