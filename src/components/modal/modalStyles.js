@@ -9,7 +9,7 @@ export const ModalEasterEgg = styled.aside`
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: rgb(0, 0, 0, 0.6);
+    background: transparent;
     color: #a5a5a5;
     width: 100%;
     height: 100%;

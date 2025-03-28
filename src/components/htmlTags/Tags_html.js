@@ -30,5 +30,5 @@ export const HtmlTag_br = styled.br`
 export const HtmlTag_space_columm = styled.div`
     display: block;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 `;

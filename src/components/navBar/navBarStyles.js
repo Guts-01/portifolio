@@ -21,6 +21,7 @@ export const SectionsLinks = styled.a`
     align-items: center;
     border-radius: 10px;
     text-decoration: none;
+    cursor: default;
     color: var(--corHome);
     background-color:var(--corTexto);
     display: flex;
@@ -66,3 +67,27 @@ export const SectionsFooter = styled.section`
 export const StyledLink = styled(Link)`
     text-decoration: none;
 `
+
+export const ButtonUp = styled.a`
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    padding: 5px;
+    top: 90%;
+    color: var(--corTexto);
+    right: 30px;
+    display: flex;
+    background:transparent;
+    border-radius: 100%;
+    border: 1px solid var(--corTexto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    gap: 10px;
+    transition: 0.2s ease-in;
+    &:hover{
+        transform: scale(1.1);
+    }
+`;
