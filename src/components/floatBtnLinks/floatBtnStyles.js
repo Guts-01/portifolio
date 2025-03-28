@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DivFloatBtn = styled.div`
     display: flex;  
     width: 60px;
-    position: fixed;
+    position: fixed !important;
     padding: 5px;
     top: 20px;
     right: 20px;

@@ -6,7 +6,6 @@ import Home from './pages/home/home'
 import About from './pages/about/about'
 import Projects from './pages/projects/projects'
 import Contact from './pages/contact/contact'
-import TawkChat from './components/tawkchat/tawkchat'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -14,12 +13,11 @@ createRoot(document.getElementById('root')).render(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />}/>
-                <Route path="/about" element={<About />}/>
+                <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />}/>
                 <Route path="/contact" element={<Contact />}/>
                 <Route path="*" element={<h1>Not Found</h1>}/>
             </Routes>
-            <TawkChat />
         </BrowserRouter> 
     </StrictMode>
 

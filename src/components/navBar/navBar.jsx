@@ -1,4 +1,4 @@
-import { NavBarStyled, SectionsFooter, SectionsLinks, SectionsLinks_img, FooterNavBar, StyledLink } from "./navBarStyles";
+import { NavBarStyled, SectionsFooter, SectionsLinks, SectionsLinks_img, FooterNavBar, StyledLink,ButtonUp } from "./navBarStyles";
 // Importando tags de estilo
 import { HtmlTag_p, HtmlTag_hr, HtmlTag_a, HtmlTag_h1 } from '../htmlTags/Tags_html';
 // Importando imagens do NavBar
@@ -14,6 +14,7 @@ function NavBar() {
     return (
         <NavBarStyled>
             <FloatBtns></FloatBtns>
+            <ButtonUp href='#'>&uArr;</ButtonUp>
             <HtmlTag_h1 className="animation-logo">
                 <div className="card">
                     <div className="loader">
@@ -53,7 +54,7 @@ function NavBar() {
 
             <StyledLink to={"/contact"}>
                 <SectionsLinks>
-                    <HtmlTag_p >Contatos</HtmlTag_p>
+                    <HtmlTag_p >Meus serviços</HtmlTag_p>
                     <SectionsLinks_img src={trabalho}></SectionsLinks_img>
                 </SectionsLinks>
             </StyledLink>
@@ -74,7 +75,7 @@ function NavBar() {
 
             <FooterNavBar>
                 <SectionsFooter>
-                    <p>	&#169; Copyrigth 2024</p>
+                    <p>	&#169; Copyrigth 2025</p>
                 </SectionsFooter>
                 <SectionsFooter>
                     <HtmlTag_a> Desenvolvido por mim</HtmlTag_a>

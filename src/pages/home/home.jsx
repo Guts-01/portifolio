@@ -1,3 +1,6 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import { HtmlTag_hr, HtmlTag_p, HtmlTag_h1 } from '../../components/htmlTags/Tags_html';
 import NavBar from '../../components/navbar/navbar';
 import { StyledLink } from '../../components/navbar/navBarStyles';
@@ -47,189 +50,192 @@ import robotframework from '../../assets/images/home/mainScreen/robo.png';
 import selenium from '../../assets/images/home/mainScreen/se.png';
 import qualidade from '../../assets/images/home/mainScreen/qualidade.png';
 
-function Home(){
+function Home() {
+    useEffect(() => {
+        AOS.init({ duration: 2000 }); // Configurando a duração da animação
+    }, []);
 
     return (
         <HomeBody>
             <NavBar />
-            
 
             <MainScreen>
 
                 <ImageCapa></ImageCapa>
 
                 <ConteinerPerfil>
-                    <ImagePerfil title='Guto oliveira'></ImagePerfil>
+                    <ImagePerfil title='Guto oliveira' data-aos="fade-in" data-aos-delay={Math.floor(Math.random() * 500)}></ImagePerfil>
                     <Sobremim>
-                        <HtmlTag_h1>Desenvolvedor Full-Stack</HtmlTag_h1>
-                        {/* <HtmlTag_p> &#9745; - QA at Totvs | Test Analyst</HtmlTag_p> */}
-                        <HtmlTag_p>QA - Totvs | Analista de Teste</HtmlTag_p>
-                        <HtmlTag_p>Guto Oliveira</HtmlTag_p>
+                        <HtmlTag_h1 data-aos="fade-down" data-aos-delay={Math.floor(Math.random() * 500)}>Desenvolvedor Full-Stack | QA | Freelancer</HtmlTag_h1>
+                        <HtmlTag_hr data-aos="fade-left" data-aos-delay={Math.floor(Math.random() * 500)}></HtmlTag_hr>
+                        <HtmlTag_p data-aos="fade-right" data-aos-delay={Math.floor(Math.random() * 500)}>Analista de Qualidade</HtmlTag_p>
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)}>Guto Oliveira</HtmlTag_p>
                     </Sobremim>
-                    <HtmlTag_hr></HtmlTag_hr>
+                    <HtmlTag_hr data-aos="flip-up" data-aos-delay={Math.floor(Math.random() * 500)}></HtmlTag_hr>
                 </ConteinerPerfil>
 
                 <ConteinerResumo>
-                    <HtmlTag_h1>Quem sou?</HtmlTag_h1>
+                    <HtmlTag_h1 data-aos="zoom-out" data-aos-delay={Math.floor(Math.random() * 500)}>Quem sou?</HtmlTag_h1>
 
-                    <HtmlTag_p>
+                    <HtmlTag_p data-aos="fade-up" data-aos-delay={Math.floor(Math.random() * 500)}></HtmlTag_p>
+                    <HtmlTag_p data-aos="fade-up" data-aos-delay="600">
                         Trabalho como <StrongTecnologias>Quality assurance</StrongTecnologias>, e atualmente estou aprimorando meu conhecimento em Cybersegurança. Sou um profissional apaixonado por desafios e inovação, e com uma sólida experiência em <StrongTecnologias>Desenvolvimento Front-end</StrongTecnologias> e <StrongTecnologias>Automação de testes</StrongTecnologias>, minha jornada é marcada pela busca constante de novos conhecimentos e desafios a serem superados pela aplicação prática de soluções eficientes. Caso queira saber mais sobre mim, <StyledLink to={"/about"}><StrongTecnologias>Clique aqui</StrongTecnologias></StyledLink>
                     </HtmlTag_p>
 
-                    <HtmlTag_hr></HtmlTag_hr>
+                    <HtmlTag_hr data-aos="flip-down" data-aos-delay="500"></HtmlTag_hr>
                 </ConteinerResumo>
 
                 <ConteinerHabilidades>
-                    <HtmlTag_h1>Soft Skills</HtmlTag_h1>
-                    <HtmlTag_p>
+                    <HtmlTag_h1 data-aos="fade-down" data-aos-delay="700">Soft Skills</HtmlTag_h1>
+                    <HtmlTag_p data-aos="zoom-in-up" data-aos-delay="800">
                         Conheça algumas das minhas <StrongTecnologias>habilidades</StrongTecnologias> em geral, e algumas nas quais estou adquirindo conhecimento, como é o caso da aréa de <StrongTecnologias>Cybersegurança</StrongTecnologias> e outras nas quais ja tenho mais experiencia, seja elas sobre <StrongTecnologias>Tecnologia, Métodologia ágil </StrongTecnologias> ou <StrongTecnologias>Comunicação</StrongTecnologias>, desde o básico até o avançado. Algumas dessas habilidades estão listadas com referencia a aréa de atuação.
                     </HtmlTag_p>
 
-                    <HtmlTag_hr></HtmlTag_hr>
+                    <HtmlTag_hr ></HtmlTag_hr>
 
-                    <ConteinerSoftskills>
-                        <HtmlTag_p>Front-End - </HtmlTag_p>
+                    <ConteinerSoftskills data-aos="zoom" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Front-End - </HtmlTag_p>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='React js - Biblioteca para Desenvolvimento web'>
+                        <DivImagesSoftSkills title='React js - Biblioteca para Desenvolvimento web' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={react_img} ></ImageSoftSkills>
                             <ParagraphSoftSkills>React</ParagraphSoftSkills>
 
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Javascript - Linguagem de programação'>
+                        <DivImagesSoftSkills title='Javascript - Linguagem de programação' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={javascript}></ImageSoftSkills>
                             <ParagraphSoftSkills>Javascript</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='HTML5 - Linguagem de marcação de Hyper texto'>
+                        <DivImagesSoftSkills title='HTML5 - Linguagem de marcação de Hyper texto' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={html}></ImageSoftSkills>
                             <ParagraphSoftSkills>HTML5</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='CSS3 - Estilização em cascata de uma página web'>
+                        <DivImagesSoftSkills title='CSS3 - Estilização em cascata de uma página web' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={css}></ImageSoftSkills>
                             <ParagraphSoftSkills>CSS3</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Bootstrap - Framework para Desenvolvimento web'>
+                        <DivImagesSoftSkills title='Bootstrap - Framework para Desenvolvimento web' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={bootstrap}></ImageSoftSkills>
                             <ParagraphSoftSkills>Bootstrap</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Responsividade - Compatibilidade para qualquer dispositivo'>
+                        <DivImagesSoftSkills title='Responsividade - Compatibilidade para qualquer dispositivo' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={responsivo}></ImageSoftSkills>
                             <ParagraphSoftSkills>Layout Reponsivo</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
                     </ConteinerSoftskills>
 
-                    <hr className='dashed'/>
-                    
-                    <ConteinerSoftskills>
-                        <HtmlTag_p>Back-end - </HtmlTag_p>
+                    <hr className='dashed' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
+
+                    <ConteinerSoftskills data-aos="zoom" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Back-end - </HtmlTag_p>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='SQlite - Bliblioteca para manipulação de dados'>
+                        <DivImagesSoftSkills title='SQlite - Bliblioteca para manipulação de dados' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={mysql}></ImageSoftSkills>
                             <ParagraphSoftSkills>SQlite</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='PostgresSql - SGBD objetivo relacional'>
+                        <DivImagesSoftSkills title='PostgresSql - SGBD objetivo relacional' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={postgres}></ImageSoftSkills>
                             <ParagraphSoftSkills>PostgreSQL</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Linguagem de programação'>
+                        <DivImagesSoftSkills title='Linguagem de programação' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={java}></ImageSoftSkills>
                             <ParagraphSoftSkills>Java</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Apis - Uso de requisições para projetos pessoais'>
+                        <DivImagesSoftSkills title='Apis - Uso de requisições para projetos pessoais' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={api}></ImageSoftSkills>
                             <ParagraphSoftSkills>Consumo de Api</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
                     </ConteinerSoftskills>
 
-                    <hr className='dashed'/>
+                    <hr className='dashed' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
 
-                    <ConteinerSoftskills>
-                        <HtmlTag_p>Ferramentas - </HtmlTag_p>
+                    <ConteinerSoftskills data-aos="zoom" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Ferramentas - </HtmlTag_p>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Software para controle e versionamento de Código'>
+                        <DivImagesSoftSkills title='Software para controle e versionamento de Código' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={git}></ImageSoftSkills>
                             <ParagraphSoftSkills>Git</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Repositórios no Github'>
+                        <DivImagesSoftSkills title='Repositórios no Github' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={github}></ImageSoftSkills>
                             <ParagraphSoftSkills>Github</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Plataforma de computação em nuvem da Microsoft'>
+                        <DivImagesSoftSkills title='Plataforma de computação em nuvem da Microsoft' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={azure}></ImageSoftSkills>
                             <ParagraphSoftSkills>Azure DevOps</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills title='Modelo de Metodologia Agíl'>
+                        <DivImagesSoftSkills title='Modelo de Metodologia Agíl' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={scrum}></ImageSoftSkills>
                             <ParagraphSoftSkills>Scrum</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Powerpoint - Excel - Word'>
+                        <DivImagesSoftSkills title='Powerpoint - Excel - Word' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={microsoftOffice}></ImageSoftSkills>
                             <ParagraphSoftSkills>Microsoft Office</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
                     </ConteinerSoftskills>
 
-                    <hr className='dashed'/>
+                    <hr className='dashed' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)}data-aos-once="true"/>
 
-                    <ConteinerSoftskills>
-                        <HtmlTag_p>Cybersegurança - </HtmlTag_p>
+                    <ConteinerSoftskills data-aos="zoom" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Cybersegurança - </HtmlTag_p>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Pentest - Sql injection - Ransomware - Phishing'>
+                        <DivImagesSoftSkills title='Pentest - Sql injection - Ransomware - Phishing' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={hack}></ImageSoftSkills>
                             <ParagraphSoftSkills>Pentest</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills title='Anonimato - DeepWeb - Ocultação digital'>
+                        <DivImagesSoftSkills title='Anonimato - DeepWeb - Ocultação digital' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={DeepWeb} ></ImageSoftSkills>
                             <ParagraphSoftSkills>Anonimato</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills title='Sistema operacional Linux - Nmap - Who.is - BruteForce'>
-                            <ImageSoftSkills   src={kaliLinux}></ImageSoftSkills>
+                        <DivImagesSoftSkills title='Sistema operacional Linux - Nmap - Who.is - BruteForce' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
+                            <ImageSoftSkills src={kaliLinux}></ImageSoftSkills>
                             <ParagraphSoftSkills>Kali linux</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills title='OSINT - Técnicas de investigação - Rastreio - Fantoches'>
+                        <DivImagesSoftSkills title='OSINT - Técnicas de investigação - Rastreio - Fantoches' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={investigador}></ImageSoftSkills>
                             <ParagraphSoftSkills>Investigação Digital</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
                     </ConteinerSoftskills>
 
-                    <hr className='dashed'/>
+                    <hr className='dashed' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
 
-                    <ConteinerSoftskills>
-                        <HtmlTag_p>Automação - </HtmlTag_p>
+                    <ConteinerSoftskills data-aos="zoom" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Automação - </HtmlTag_p>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills title='Linguagem de programação'>
+                        <DivImagesSoftSkills title='Linguagem de programação' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={python}></ImageSoftSkills>
-                            <ParagraphSoftSkills>Python</ParagraphSoftSkills>
+                            <ParagraphSoftSkills>Linguagem: Python</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills  title='Framework para testes web'>
+                        <DivImagesSoftSkills title='Framework para testes web' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={selenium}></ImageSoftSkills>
-                            <ParagraphSoftSkills>Selenium</ParagraphSoftSkills>
+                            <ParagraphSoftSkills>Selenium Framework</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills title='Testes de Software - Tests cases automatizados - captura de bugs'>
+                        <DivImagesSoftSkills title='Testes de Software - Tests cases automatizados - captura de bugs' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={qualidade}></ImageSoftSkills>
-                            <ParagraphSoftSkills>Garantia de qualidade</ParagraphSoftSkills>
+                            <ParagraphSoftSkills>Quality assurance</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
                         {/* =================================================== */}
-                        <DivImagesSoftSkills title='Framework para Automação de testes multiplataforma'>
+                        <DivImagesSoftSkills title='Framework para Automação de testes multiplataforma' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={robotframework}></ImageSoftSkills>
                             <ParagraphSoftSkills>Robot Framework</ParagraphSoftSkills>
                         </DivImagesSoftSkills>
@@ -239,12 +245,12 @@ function Home(){
                     <HtmlTag_hr></HtmlTag_hr>
                 </ConteinerHabilidades>
 
-                <ConteinerGoogleMaps>
-                    <HtmlTag_h1>Localização</HtmlTag_h1>
-                    <HtmlTag_p>Estou localizado em <StrongTecnologias>São paulo - SP</StrongTecnologias>, caso queira entrar em contato, estou disponível para conversar e tirar dúvidas sobre qualquer assunto, seja ele sobre tecnologia, automação de testes, ou até mesmo sobre a área de Cybersegurança.</HtmlTag_p>
-                    <HtmlTag_hr></HtmlTag_hr>
+                <ConteinerGoogleMaps  data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
+                    <HtmlTag_h1  data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Localização</HtmlTag_h1>
+                    <HtmlTag_p  data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Estou localizado em <StrongTecnologias>São paulo - SP</StrongTecnologias>, caso queira entrar em contato, estou disponível para conversar e tirar dúvidas sobre qualquer assunto, seja ele sobre tecnologia, automação de testes, ou até mesmo sobre a área de Cybersegurança.</HtmlTag_p>
+                    <HtmlTag_hr  data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"></HtmlTag_hr>
                     <GoogleMaps>
-                        <Mapstyle src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.073635473896!2d-46.65156878498093!3d-23.54362148468208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b5f4b5c5b3d%3A0x8b5f5b9c3b7e4d5d!2sS%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1633202176778!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy">
+                        <Mapstyle src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.073635473896!2d-46.65156878498093!3d-23.54362148468208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b5f4b5c5b3d%3A0x8b5f5b9c3b7e4d5d!2sS%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1633202176778!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"  data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                         </Mapstyle>
                     </GoogleMaps>
                 </ConteinerGoogleMaps>

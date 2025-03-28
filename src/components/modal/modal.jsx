@@ -50,7 +50,7 @@ if(isOpen) {
 return (
 
     <ModalEasterEgg>
-        <ConteinerEasterEgg>
+        <ConteinerEasterEgg data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
             <DivCloseModal>
                 <BtnCloseModal onClick={setOpenModal}>&#10007;</BtnCloseModal>
             </DivCloseModal>

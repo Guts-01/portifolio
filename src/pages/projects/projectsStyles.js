@@ -14,14 +14,14 @@ export const ProjectsScreen = styled.main`
     width: 100%;
     margin-left: 20%;
     color: var(--corTexto);
-    gap: 20px;
+    gap: 60px;
 `;
 
 export const TitleConteinerProjetos = styled.div`
     display: flex;
     flex-direction: column;
     padding: 2% 10%;
-    width: 100%;
+    width: 95%;
     gap:10px;
     color: #a5a5a5;
 `;
@@ -33,7 +33,8 @@ export const ConteinerProjetosLeft = styled.section`
     align-items: end;
     padding: 2% 10%;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 `;
 
 export const ConteinerProjetosRight = styled.section`
@@ -44,6 +45,7 @@ export const ConteinerProjetosRight = styled.section`
     padding: 0 10%;
     gap: 10px;
     margin-top: 50px;
+    margin-bottom: 50px;
 `;
 
 export const Divprojects = styled.div`

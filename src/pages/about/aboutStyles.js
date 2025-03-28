@@ -26,6 +26,21 @@ export const TitleConteinerAbout = styled.div`
     color: #a5a5a5;
 `;
 
+export const Button = styled.a`
+    display: inline-block;
+    background-color:red;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--corTexto);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 10px;
+    transition: 0.2s ease-in;
+&:hover {
+    transform: scale(1.1);
+}
+`;
 
 export const Container = styled.div`
     background-color: var(--corHome);
@@ -43,37 +58,59 @@ export const Timeline = styled.div`
     flex-direction: column;
     gap: 100px;
     margin-top: 60px;
-    width: 60%;
+    margin-bottom: 60px;
+    width: 100%;
     position: relative;
-
-&::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    width: 4px;
-    height: 100%;
-    background-color:var(--corTexto);
-    transform: translateX(-50%);
-}
+    align-items: center;
+    justify-content: space-around;
 `;
 
-export const Event = styled.div`
+export const Linha = styled.hr`
+    border-color: red;
+    width: 2px;
+    height: 80%;
+    position:absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: 0.9s ease-in;
+`;
+
+export const EventRight = styled.div`
     background:var(--corHome);
     padding: 15px;
     margin: auto 10px;
     border-radius: 8px;
-    width: 50%;
+    width: 400px;
+    right: 45%;
     gap: 20px;
     position: relative;
+    z-index: 100;
     text-align: left;
     font-family: var(--fontPrincipal);
-    border: 1px solid var(--corTexto);´
-
-&:nth-child(odd) {
-    align-self: flex-start;
+    border: 1px solid var(--corTexto);
+    transition: 0.4s ease-in;
+    cursor: default;
+&:hover{
+    transform: scale(1.1);
 }
-
-&:nth-child(even) {
-    align-self: flex-end;
+`
+export const EventLeft = styled.div`
+    background:var(--corHome);
+    padding: 15px;
+    margin: auto 10px;
+    border-radius: 8px;
+    width: 400px;
+    left: 45%;
+    gap: 20px;
+    z-index: 100;
+    position: relative;
+    text-align: right;
+    font-family: var(--fontPrincipal);
+    border: 1px solid var(--corTexto);
+    transition: 0.4s ease-in;
+    cursor: default;
+&:hover{
+    transform: scale(1.1);
 }
 `

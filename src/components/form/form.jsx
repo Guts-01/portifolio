@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FormContainer, Title, Input, Textarea, Button, Label } from "./formStyle";
+import { HtmlTag_hr } from "../htmlTags/Tags_html";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -19,11 +20,15 @@ const ContactForm = () => {
         alert("Mensagem enviada com sucesso! 🚀");
         setFormData({ name: "", email: "", message: "" });
     };
+    
+    const ButtontextSend = "Enviado";
+
+    const [buttonText, setButtonText] = useState("Enviar");
 
     return (
         <FormContainer onSubmit={handleSubmit}>
-            <Title>Tire sua dúvida!</Title>
-
+            <Title>Entre em contato</Title>
+            <HtmlTag_hr></HtmlTag_hr>
             <Label >
                 Nome:
             </Label>
@@ -33,7 +38,6 @@ const ContactForm = () => {
                 placeholder="Jhon Wayne"
                 value={formData.name}
                 onChange={handleChange}
-            // required
             />
             <Label >
                 Email:
@@ -58,7 +62,16 @@ const ContactForm = () => {
                 required
             />
 
-            <Button type="submit">Enviar</Button>
+            <Button type="submit" onClick={
+                () => {
+                    if (!formData.name || !formData.email || !formData.message) {
+                        setButtonText(buttonText)
+                    }
+                    else(
+                        setButtonText(ButtontextSend)
+                    )
+                }
+            }>{buttonText}</Button>
         </FormContainer>
     );
 };

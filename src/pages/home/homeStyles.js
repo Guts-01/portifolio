@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import capaPerfil from '../../assets/images/home/mainScreen/programming-1873854_1280.png'
-import fotoPerfil from '../../assets/images/home/mainScreen/foto_perfil.png'
+import fotoPerfil from '../../assets/images/home/mainScreen/foto_perfil.jpg'
 
 export const HomeBody = styled.body`
     background-color: var(--corHome);
@@ -13,6 +13,9 @@ export const HomeBody = styled.body`
 // ===========================================
 
 export const MainScreen = styled.main`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     margin-left: 20%;
     color: var(--corTexto);
@@ -83,15 +86,17 @@ export const ConteinerHabilidades = styled.section`
 
 export const ConteinerSoftskills = styled.div`
     width: 100%;
+
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     margin-top: 2%;
     place-items: center;
+    gap: 20px;
 `;
 
 export const DivImagesSoftSkills = styled.div`
-    width: 110px;
+    width: 70px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -100,25 +105,24 @@ export const DivImagesSoftSkills = styled.div`
     align-items: center;
     justify-content: center;
     background-color:var(--corTexto);
-    transition: 0.2s ease-in;
-    opacity:0.6;
+    transition: 0.2s;
+    opacity:0.6 !important;
     filter: brightness(100%);
     &:hover{
-        opacity: 1;
-        image-rendering: normal;
-        transform: scale(1.1);
+        opacity: 1 !important;
+        transform: scale(1.1) !important;
     }
 `;
 
 export const ImageSoftSkills = styled.img`
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     transition: 0.2s ease-in;
     border-radius: 10px; 
 `;
 
 export const ParagraphSoftSkills = styled.button`
-    font-size: 15px;
+    font-size: 12px;
     color: var(--corHome);
     text-align: center;
     font-family: var(--fontPrincipal);
@@ -130,7 +134,7 @@ export const ConteinerGoogleMaps = styled.section`
     display: flex;
     flex-direction: column;
     padding: 0 10%;
-    width: 100%;
+    width: 95%;
     gap: 20px;
     margin-top: 3%;
     color: #a5a5a5;
