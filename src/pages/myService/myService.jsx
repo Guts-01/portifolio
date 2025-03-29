@@ -1,6 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import NavBar from '../../components/navbar/navbar';
+import NavBar from '../../components/navbar/navBar';
 import NavMobile from '../../components/navBar/navBarMobile';
 import { useState, useEffect } from 'react';
 import { WorkBody, WorkScreen, Container, TitleConteinerWork,  ServicesContainer,Service, ServiceTitle,ServiceDescription,ServiceButton } from './myServiceStyles';
