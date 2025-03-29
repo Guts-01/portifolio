@@ -2,7 +2,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { useState,useEffect } from "react";
 import { motion } from "framer-motion"; // Importando a biblioteca de animações
-import NavBar from '../../components/navbar/navBar';
+import NavBar from '../../components/navBar/navBar';
 import NavMobile from '../../components/navBar/navBarMobile';
 import { AboutBody, AboutScreen, Container, Timeline, EventRight, Button, TitleConteinerAbout, Linha, EventLeft } from "./aboutStyles";
 import { HtmlTag_h1, HtmlTag_hr, HtmlTag_space_columm, HtmlTag_p } from '../../components/htmlTags/Tags_html';
