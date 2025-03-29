@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { HtmlTag_hr, HtmlTag_p, HtmlTag_h1 } from '../../components/htmlTags/Tags_html';
 import NavBar from '../../components/navBar/navBar';
 import NavMobile from '../../components/navBar/navBarMobile'
-import { StyledLink } from '../../components/navbar/navBarStyles';
+import { StyledLink } from '../../components/navBar/navBarStyles';
 import {
     ConteinerGoogleMaps,
     ConteinerHabilidades,
