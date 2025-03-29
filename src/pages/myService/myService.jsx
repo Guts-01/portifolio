@@ -1,19 +1,27 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import NavBar from '../../components/navbar/navbar';
-import { useState } from 'react';
-import { WorkBody, WorkScreen, Container, TitleConteinerWork,  ServicesContainer,Service, ServiceTitle,ServiceDescription,ServiceButton } from './contactStyles';
+import NavMobile from '../../components/navBar/navBarMobile';
+import { useState, useEffect } from 'react';
+import { WorkBody, WorkScreen, Container, TitleConteinerWork,  ServicesContainer,Service, ServiceTitle,ServiceDescription,ServiceButton } from './myServiceStyles';
 import { HtmlTag_h1, HtmlTag_hr, HtmlTag_p, HtmlTag_space_columm } from '../../components/htmlTags/Tags_html';
 import ContactForm from '../../components/form/form';
 
 const ContratarServico = 'Contratado!';
 
-function Contact() {
+function MyServices() {
     ("Baixar CV");
     const [NomeContratarServico, setNomeContratarServico] = useState("Contratar serviço");
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 }); // Configurando a duração da animação
+    }, []);
     return (
         <WorkBody>
             <NavBar />
+            <NavMobile />
             <WorkScreen>
-                <TitleConteinerWork>
+                <TitleConteinerWork data-aos="fade-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                     <HtmlTag_h1>O que posso fazer por você?</HtmlTag_h1>
                     <HtmlTag_p>
                         Se você precisa de algum serviço que não esta catálogado abaixo, mande-me um email contando o que você precisa, vamos bater um papo.
@@ -25,13 +33,13 @@ function Contact() {
 
 
                     <HtmlTag_space_columm></HtmlTag_space_columm>
-                    <HtmlTag_h1>Alguns dos meus serviços Contratáveis</HtmlTag_h1>
+                    <HtmlTag_h1 data-aos="fade-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Alguns dos meus serviços Contratáveis</HtmlTag_h1>
                     <HtmlTag_space_columm></HtmlTag_space_columm>
-                    <HtmlTag_hr></HtmlTag_hr>
+                    <HtmlTag_hr data-aos="fade-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"></HtmlTag_hr>
 
                     <ServicesContainer>
 
-                        <Service>
+                        <Service data-aos="zoom-in-down" data-aos-once="true"  data-aos-duration="5000">
                             <ServiceTitle>
                                 Desenvolvimento de Sites e Landing pages
                             </ServiceTitle>
@@ -43,7 +51,7 @@ function Contact() {
                             <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Desenvolvimento%20de%20sites%20e%20Landing%20pages*' target='_blank'>{NomeContratarServico}</ServiceButton>
                         </Service>
 
-                        <Service>
+                        <Service data-aos="zoom-in-down" data-aos-duration="5000" data-aos-once="true">
                             <ServiceTitle>
                                 Automação de Processos e Testes
                             </ServiceTitle>
@@ -55,7 +63,7 @@ function Contact() {
                             <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Automação%20de%20Processos%20e%20Testes*' target='_blank'>{NomeContratarServico}</ServiceButton>
                         </Service>
 
-                        <Service>
+                        <Service data-aos="zoom-in-down"  data-aos-once="true" data-aos-duration="5000">
                             <ServiceTitle>
                                 Criação de aplicações web
                             </ServiceTitle>
@@ -67,7 +75,7 @@ function Contact() {
                             <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Criação%20de%20aplicações%20web*' target='_blank'>{NomeContratarServico}</ServiceButton>
                         </Service>
 
-                        <Service>
+                        <Service data-aos="zoom-in-up"  data-aos-once="true" data-aos-duration="5000">
                             <ServiceTitle>
                                 Consumo e Conexão com APIs
                             </ServiceTitle>
@@ -79,7 +87,7 @@ function Contact() {
                             <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Comsumo%20e%20conexão%20com%20APIs*' target='_blank'>{NomeContratarServico}</ServiceButton>
                         </Service>
 
-                        <Service>
+                        <Service data-aos="zoom-in-up" data-aos-duration="5000" data-aos-once="true">
                             <ServiceTitle>
                                 E-commerce
                             </ServiceTitle>
@@ -91,31 +99,31 @@ function Contact() {
                             <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*E-commerce*' target='_blank'>{NomeContratarServico}</ServiceButton>
                         </Service>
 
-                        <Service>
+                        <Service data-aos="zoom-in-up"  data-aos-once="true" data-aos-duration="5000">
                             <ServiceTitle>
-                                Manutenção e Clean-code
+                                Freelancer
                             </ServiceTitle>
 
                             <ServiceDescription>
-                                Manutenção e refatoração de código para melhorar a qualidade do seu sistema e projeto.
+                                Trabalho como freelancer para empresas e pessoas físicas, com projetos de curto e longo prazo.
                             </ServiceDescription>
                             
-                            <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Manutenção%20e%20Clean-code*' target='_blank'>{NomeContratarServico}</ServiceButton>
+                            <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Freelancer*' target='_blank'>{NomeContratarServico}</ServiceButton>
                         </Service>
 
 
                     </ServicesContainer>
 
-                    <HtmlTag_hr></HtmlTag_hr>
+                    <HtmlTag_hr data-aos="zoom-in-up"  data-aos-once="true" data-aos-duration="5000"></HtmlTag_hr>
                     <HtmlTag_space_columm></HtmlTag_space_columm>
-                    <HtmlTag_h1>Não encontrou o que procurava?</HtmlTag_h1>
+                    <HtmlTag_h1 data-aos="zoom-in-up"  data-aos-once="true" data-aos-duration="5000">Não encontrou o que procurava?</HtmlTag_h1>
                     <HtmlTag_space_columm></HtmlTag_space_columm>
-                    <HtmlTag_p>
+                    <HtmlTag_p data-aos="zoom-in-up"  data-aos-once="true" data-aos-duration="5000">
                         Então me mande um email contando o que você precisa, vamos bater um papo.
                     </HtmlTag_p>
                     <HtmlTag_space_columm></HtmlTag_space_columm>
 
-                    <ContactForm></ContactForm>
+                    <ContactForm data-aos="zoom-in-up"  data-aos-once="true" data-aos-duration="5000"></ContactForm>
 
                     <HtmlTag_hr></HtmlTag_hr>
                     <HtmlTag_space_columm></HtmlTag_space_columm>
@@ -131,4 +139,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default MyServices;

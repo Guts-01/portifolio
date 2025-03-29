@@ -6,6 +6,12 @@ export const HomeBody = styled.body`
     background-color: var(--corHome);
     display: flex;
     flex-direction: row;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+    @media (max-width: 430px) {
+        flex-direction: column;
+    }
 `;
 
 // ===========================================
@@ -20,6 +26,14 @@ export const MainScreen = styled.main`
     margin-left: 20%;
     color: var(--corTexto);
     background-color: var(--corHome);
+    @media (max-width: 1024px) {
+        margin-left: 0;
+        padding: 5%;
+    }
+    @media (max-width: 430px) {
+        padding: 0;
+        align-items: center;
+    }
 `;
 
 export const ImageCapa = styled.section`
@@ -29,13 +43,18 @@ export const ImageCapa = styled.section`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-`;
-
-export const ConteinerPerfil = styled.section`
-    display: flex;
-    flex-direction: column;
-    padding: 0 10%;
-    width: 100%;
+    @media (max-width: 834px) and (min-width: 800px) {
+        height: 250px;
+    }
+    @media (max-width: 440px) {
+        height: 200px;
+    }
+    @media (max-width: 393px){
+        height: 185px;
+    }
+    @media (max-width: 360px){
+        height: 180px;
+    }
 `;
 
 export const ImagePerfil = styled.div`
@@ -49,7 +68,32 @@ export const ImagePerfil = styled.div`
     position: absolute;
     top: 20%;
     left: 28%;
+    @media (max-width: 834px) and (min-width: 800px) {
+        width: 150px;
+        height: 150px;
+        top: 20%;
+    }
+    @media (max-width: 768px){
+        width: 150px;
+        height: 150px;
+        top: 30%;
+    }
+    @media (max-width: 440px) {
+        width: 100px;
+        height: 100px;
+        top: 20%;
+        left: 10%;
+    }
 `;
+
+export const ConteinerPerfil = styled.section`
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    width: 100%;
+    align-items: center;
+`;
+
 
 export const Sobremim = styled.div`
     display: flex;
@@ -58,6 +102,23 @@ export const Sobremim = styled.div`
     justify-content: center;
     height: 20vh;
     padding-left: 40%;
+    @media (max-width: 834px) and (min-width: 800px) {
+        font-size: 8px;
+        padding-left: 60%;
+        height: 12vh;
+    }
+    @media (max-width: 768px){
+        font-size: 8px;
+        padding-left: 60%;
+        height: 12vh;
+    }
+    @media (max-width: 440px) {
+        font-size: 5px;
+        padding-left: 45%;
+    }
+    @media (max-width: 360px){
+        font-size: 5px;
+    }
 `;
 
 export const ConteinerResumo = styled.section`
@@ -68,6 +129,21 @@ export const ConteinerResumo = styled.section`
     gap: 20px;
     margin-top: 3%;
     color: #a5a5a5;
+    @media (max-width: 834px) and (min-width: 800px) {
+        padding-left: 25%;
+        text-align: center;
+    }
+    @media (max-width: 768px){
+        padding-left: 25%;
+        text-align: center;
+    }
+    @media (max-width: 440px) {
+        padding: 0 5%;
+        font-size: 13px;
+    }
+    @media (max-width: 393px){
+        font-size: 11px;
+    }
 `;
 
 export const StrongTecnologias = styled.strong`
@@ -75,24 +151,52 @@ export const StrongTecnologias = styled.strong`
 `;
 
 export const ConteinerHabilidades = styled.section`
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 7fr);
     padding: 0 10%;
     width: 100%;
     gap: 40px;
     margin-top: 3%;
     color: #a5a5a5;
+    @media (max-width: 834px) and (min-width: 800px) {
+        padding-left: 25%;
+        text-align: center;
+    }
+    @media (max-width: 768px){
+        padding-left: 25%;
+        text-align: center;
+    }
+    @media (max-width: 440px) {
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+    }
+    @media (max-width: 393px){
+        font-size: 11px;
+    }
+    
 `;
 
 export const ConteinerSoftskills = styled.div`
     width: 100%;
-
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     margin-top: 2%;
     place-items: center;
     gap: 20px;
+    @media (max-width: 834px) and (min-width: 800px) {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    @media (max-width: 768px){
+        grid-template-columns: repeat(7, 1fr);
+    }
+    @media (max-width: 440px) {
+        padding: 0 5%;
+        grid-template-columns: repeat(1, 7fr);
+        gap: 60px;
+    }
 `;
 
 export const DivImagesSoftSkills = styled.div`
@@ -106,11 +210,18 @@ export const DivImagesSoftSkills = styled.div`
     justify-content: center;
     background-color:var(--corTexto);
     transition: 0.2s;
-    opacity:0.6 !important;
-    filter: brightness(100%);
+    opacity:0.9 !important;
     &:hover{
-        opacity: 1 !important;
         transform: scale(1.1) !important;
+    }
+    @media (max-width: 834px) and (min-width: 800px) {
+        width: 60px;
+    }
+    @media (max-width: 768px){
+        width: 50px;
+    }
+    @media (max-width: 440px) {
+        width: 120px;
     }
 `;
 
@@ -119,6 +230,9 @@ export const ImageSoftSkills = styled.img`
     height: 30px;
     transition: 0.2s ease-in;
     border-radius: 10px; 
+    @media (max-width: 834px) {
+        width: 20px;
+    }
 `;
 
 export const ParagraphSoftSkills = styled.button`
@@ -128,6 +242,9 @@ export const ParagraphSoftSkills = styled.button`
     font-family: var(--fontPrincipal);
     border:none;
     background-color: transparent;
+    @media (max-width: 834px) and (min-width: 800px) {
+        font-size: 11px;
+    }
 `;
 
 export const ConteinerGoogleMaps = styled.section`
@@ -138,6 +255,17 @@ export const ConteinerGoogleMaps = styled.section`
     gap: 20px;
     margin-top: 3%;
     color: #a5a5a5;
+    @media (max-width: 834px) and (min-width: 800px) {
+        padding-left: 25%;
+    }
+    @media (max-width: 768px){
+        padding-left: 25%;
+        width: 95%;
+    }
+    @media (max-width: 440px) {
+        padding: 0 5%;
+        text-align: center;
+    }
 `;
 
 export const GoogleMaps = styled.div`
@@ -154,4 +282,18 @@ export const Mapstyle = styled.iframe`
     height: 500px;
     border: 0;
     border-radius: 20px;
+    @media (max-width: 834px) and (min-width: 800px) {
+        width: 800px;
+        height: 300px;
+    }
+    @media (max-width: 768px){
+        width: 600px;
+        height: 200px;
+    }
+    @media (max-width: 440px) {
+        padding: 0 5%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
 `;

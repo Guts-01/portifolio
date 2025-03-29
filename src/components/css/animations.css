@@ -80,3 +80,33 @@
         transform: translateY(-400%);
     }
 }
+
+@media (max-width: 834px) and (min-width: 800px) {
+    .card {
+        padding: 1rem 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .words {
+        width: 200px;
+    }
+    .loader {
+        width: 110%;
+        font-size: 10px;
+        height: 30px;
+    }  
+}
+@media (max-width: 768px){  
+    .card {
+        padding: 1rem 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .words {
+        width: 200px;
+    }
+    .loader {
+        width: 110%;
+        font-size: 10px;
+        height: 30px;
+    }   
+
+}
