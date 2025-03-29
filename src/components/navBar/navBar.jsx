@@ -1,4 +1,4 @@
-import { NavBarStyled, SectionsFooter, SectionsLinks, SectionsLinks_img, FooterNavBar, StyledLink,ButtonUp } from "./navBarStyles";
+import { NavBarStyled, SectionsFooter, SectionsLinks, SectionsLinks_img, FooterNavBar, StyledLink,ButtonUp} from "./navBarStyles";
 // Importando tags de estilo
 import { HtmlTag_p, HtmlTag_hr, HtmlTag_a, HtmlTag_h1 } from '../htmlTags/Tags_html';
 // Importando imagens do NavBar
@@ -45,14 +45,14 @@ function NavBar() {
                 </SectionsLinks>
             </StyledLink>
 
-            <StyledLink to={"/Projects"}>
+            <StyledLink to={"/projects"}>
                 <SectionsLinks>
                     <HtmlTag_p>Projetos</HtmlTag_p>
                     <SectionsLinks_img src={projeto}></SectionsLinks_img>
                 </SectionsLinks>
             </StyledLink>
 
-            <StyledLink to={"/contact"}>
+            <StyledLink to={"/services"}>
                 <SectionsLinks>
                     <HtmlTag_p >Meus serviços</HtmlTag_p>
                     <SectionsLinks_img src={trabalho}></SectionsLinks_img>
@@ -79,12 +79,6 @@ function NavBar() {
                 </SectionsFooter>
                 <SectionsFooter>
                     <HtmlTag_a> Desenvolvido por mim</HtmlTag_a>
-                </SectionsFooter>
-                <SectionsFooter>
-                    <HtmlTag_a href="https://github.com/Guts-01" target="_blank">
-                        {/* <strong> <i>Follow me on Github</i></strong> */}
-                        <strong> <i>Me siga no Github</i></strong>
-                    </HtmlTag_a>
                 </SectionsFooter>
             </FooterNavBar>
         </NavBarStyled>

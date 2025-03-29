@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/home/home'
 import About from './pages/about/about'
 import Projects from './pages/projects/projects'
-import Contact from './pages/contact/contact'
+import MyServices from './pages/myService/myService'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')).render(
                 <Route path="/" element={<Home />}/>
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />}/>
-                <Route path="/contact" element={<Contact />}/>
+                <Route path="/services" element={<MyServices />}/>
                 <Route path="*" element={<h1>Not Found</h1>}/>
             </Routes>
         </BrowserRouter> 

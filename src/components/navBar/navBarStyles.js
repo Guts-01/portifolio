@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 //               NavBar
 // ===========================================
 
+
 export const NavBarStyled = styled.nav`
     background-color: var(--corNavBar);
     display: flex;
@@ -16,7 +17,14 @@ export const NavBarStyled = styled.nav`
     text-align: center; 
     max-width: 20%;
     width:20%;
-`
+    @media (max-width: 430px){
+        display: none;
+}`
+
+export const StyledLink = styled(Link)`
+        text-decoration: none;
+    `
+
 export const SectionsLinks = styled.a`
     align-items: center;
     border-radius: 10px;
@@ -35,6 +43,20 @@ export const SectionsLinks = styled.a`
     &:hover{
         transform: scale(1.1);
         opacity: 1;
+    }
+    @media (max-width: 834px) and (min-width: 800px) {
+        height: 4vh;
+        gap: 5px;
+        height: 4vh;
+        gap: 5px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    @media (max-width: 768px){
+        height: 4vh;
+        gap: 5px;
+        font-size: 12px;
+        padding: 5px;
     }
 `;
 
@@ -64,9 +86,6 @@ export const SectionsFooter = styled.section`
     width: 100%;
 `;
 
-export const StyledLink = styled(Link)`
-    text-decoration: none;
-`
 
 export const ButtonUp = styled.a`
     text-decoration: none;

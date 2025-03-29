@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NavBar from '../../components/navbar/navbar';
+import NavMobile from '../../components/navBar/navBarMobile';
 import {
   ButtonRepo, DivText, TitleConteinerProjetos, ProjectsBody, ProjectsScreen,
   ConteinerProjetosLeft, ConteinerProjetosRight, Divprojects, ImagemDoProjetoPC,
@@ -31,10 +32,11 @@ function Projects() {
   return (
     <ProjectsBody>
       <NavBar />
+      <NavMobile />
       <ProjectsScreen>
         <TitleConteinerProjetos data-aos="fade-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
           <HtmlTag_h1>Conheça todos os meus projetos</HtmlTag_h1>
-          <HtmlTag_p>Desde projetos pessoais até acadêmicos.</HtmlTag_p>
+          <HtmlTag_p>Desde projetos pessoais até profissionais</HtmlTag_p>
           <HtmlTag_hr />
         </TitleConteinerProjetos>
 
@@ -59,17 +61,18 @@ function Projects() {
             </DivText>
             <ImagemProjects>
               <ImagemDoProjetoPC src={buscarCepPC} alt="Projeto no PC" data-aos="fade-left" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
-              <ImagemDoProjetoMobile src={buscarCepMobile} alt='Projeto no Celular' data-aos="fade-left" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
+              <ImagemDoProjetoMobile src={buscarCepMobile} alt='Projeto no Celular' data-aos="fade-right" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
             </ImagemProjects>
           </Divprojects>
-          <HtmlTag_hr />
         </ConteinerProjetosLeft>
-        
+        <HtmlTag_space_columm></HtmlTag_space_columm>
 
         <ConteinerProjetosRight>
+
           <Divprojects>
             <ImagemProjects>
-              <ImagemDoProjetoMobile src={JogoGatinhoMobile} alt='Projeto no Celular' data-aos="fade-left" data-aos-delay={Math.floor(Math.random() * 500)}  data-aos-once="true"/>
+              <ImagemDoProjetoPC src={buscarCepPC} alt="Projeto no PC" data-aos="fade-left" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
+              <ImagemDoProjetoMobile src={JogoGatinhoMobile} alt='Projeto no Celular' data-aos="fade-right" data-aos-delay={Math.floor(Math.random() * 500)}  data-aos-once="true"/>
             </ImagemProjects>
             <DivText>
               <HtmlTag_h1 data-aos="fade-up" data-aos-delay={Math.floor(Math.random() * 500)}  data-aos-once="true">Jogo do Gatinho</HtmlTag_h1>
@@ -88,8 +91,9 @@ function Projects() {
               </DivButtons>
             </DivText>
           </Divprojects>
-          <HtmlTag_hr />
         </ConteinerProjetosRight>
+
+        <HtmlTag_space_columm></HtmlTag_space_columm>
 
         <ConteinerProjetosLeft >
           <Divprojects >
@@ -113,8 +117,9 @@ function Projects() {
               <ImagemDoProjetoMobile src={ConsultarVeiculosMobile} alt='Projeto no Celular' data-aos="fade-right" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
             </ImagemProjects>
           </Divprojects>
-          <HtmlTag_hr />
         </ConteinerProjetosLeft>
+
+        <HtmlTag_space_columm></HtmlTag_space_columm>
 
         <TitleConteinerProjetos data-aos="zoom-in-down" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
           <HtmlTag_h1>É o Fim?</HtmlTag_h1>

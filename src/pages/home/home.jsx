@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { HtmlTag_hr, HtmlTag_p, HtmlTag_h1 } from '../../components/htmlTags/Tags_html';
 import NavBar from '../../components/navbar/navbar';
+import NavMobile from '../../components/navBar/navBarMobile'
 import { StyledLink } from '../../components/navbar/navBarStyles';
 import {
     ConteinerGoogleMaps,
@@ -58,6 +59,7 @@ function Home() {
     return (
         <HomeBody>
             <NavBar />
+            <NavMobile />
 
             <MainScreen>
 
@@ -66,20 +68,19 @@ function Home() {
                 <ConteinerPerfil>
                     <ImagePerfil title='Guto oliveira' data-aos="fade-in" data-aos-delay={Math.floor(Math.random() * 500)}></ImagePerfil>
                     <Sobremim>
-                        <HtmlTag_h1 data-aos="fade-down" data-aos-delay={Math.floor(Math.random() * 500)}>Desenvolvedor Full-Stack | QA | Freelancer</HtmlTag_h1>
+                        <HtmlTag_h1 data-aos="fade-down" data-aos-delay={Math.floor(Math.random() * 500)}>Desenvolvedor Full-Stack | QA & Freelancer</HtmlTag_h1>
                         <HtmlTag_hr data-aos="fade-left" data-aos-delay={Math.floor(Math.random() * 500)}></HtmlTag_hr>
                         <HtmlTag_p data-aos="fade-right" data-aos-delay={Math.floor(Math.random() * 500)}>Analista de Qualidade</HtmlTag_p>
                         <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)}>Guto Oliveira</HtmlTag_p>
                     </Sobremim>
-                    <HtmlTag_hr data-aos="flip-up" data-aos-delay={Math.floor(Math.random() * 500)}></HtmlTag_hr>
                 </ConteinerPerfil>
 
                 <ConteinerResumo>
-                    <HtmlTag_h1 data-aos="zoom-out" data-aos-delay={Math.floor(Math.random() * 500)}>Quem sou?</HtmlTag_h1>
+                    <HtmlTag_hr data-aos="flip-up" data-aos-delay={Math.floor(Math.random() * 500)}></HtmlTag_hr>
+                    <HtmlTag_h1 data-aos="fade-down" data-aos-delay="700">Quem sou?</HtmlTag_h1>
 
-                    <HtmlTag_p data-aos="fade-up" data-aos-delay={Math.floor(Math.random() * 500)}></HtmlTag_p>
-                    <HtmlTag_p data-aos="fade-up" data-aos-delay="600">
-                        Trabalho como <StrongTecnologias>Quality assurance</StrongTecnologias>, e atualmente estou aprimorando meu conhecimento em Cybersegurança. Sou um profissional apaixonado por desafios e inovação, e com uma sólida experiência em <StrongTecnologias>Desenvolvimento Front-end</StrongTecnologias> e <StrongTecnologias>Automação de testes</StrongTecnologias>, minha jornada é marcada pela busca constante de novos conhecimentos e desafios a serem superados pela aplicação prática de soluções eficientes. Caso queira saber mais sobre mim, <StyledLink to={"/about"}><StrongTecnologias>Clique aqui</StrongTecnologias></StyledLink>
+                    <HtmlTag_p data-aos="fade-up" data-aos-delay="800">
+                        Trabalho como <StrongTecnologias>Quality assurance</StrongTecnologias>, e atualmente estou aprimorando meu conhecimento em Cybersegurança. Sou um profissional apaixonado por desafios e inovação, e com uma sólida experiência em <StrongTecnologias>Desenvolvimento Web</StrongTecnologias> e <StrongTecnologias>Automação de testes</StrongTecnologias>, minha jornada é marcada pela busca constante de novos conhecimentos e desafios a serem superados pela aplicação prática de soluções eficientes. Caso queira saber mais sobre mim, <StyledLink to={"/about"}><StrongTecnologias>Clique aqui</StrongTecnologias></StyledLink>
                     </HtmlTag_p>
 
                     <HtmlTag_hr data-aos="flip-down" data-aos-delay="500"></HtmlTag_hr>
@@ -94,7 +95,7 @@ function Home() {
                     <HtmlTag_hr ></HtmlTag_hr>
 
                     <ConteinerSoftskills data-aos="zoom" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
-                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Front-End - </HtmlTag_p>
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">FrontEnd </HtmlTag_p>
                         {/* =================================================== */}
                         <DivImagesSoftSkills title='React js - Biblioteca para Desenvolvimento web' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={react_img} ></ImageSoftSkills>
@@ -132,7 +133,7 @@ function Home() {
                     <hr className='dashed' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
 
                     <ConteinerSoftskills data-aos="zoom" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
-                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Back-end - </HtmlTag_p>
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Backend </HtmlTag_p>
                         {/* =================================================== */}
                         <DivImagesSoftSkills title='SQlite - Bliblioteca para manipulação de dados' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={mysql}></ImageSoftSkills>
@@ -159,7 +160,7 @@ function Home() {
                     <hr className='dashed' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
 
                     <ConteinerSoftskills data-aos="zoom" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
-                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Ferramentas - </HtmlTag_p>
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Ferramentas </HtmlTag_p>
                         {/* =================================================== */}
                         <DivImagesSoftSkills title='Software para controle e versionamento de Código' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={git}></ImageSoftSkills>
@@ -191,7 +192,7 @@ function Home() {
                     <hr className='dashed' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)}data-aos-once="true"/>
 
                     <ConteinerSoftskills data-aos="zoom" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
-                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Cybersegurança - </HtmlTag_p>
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Cybersegurança </HtmlTag_p>
                         {/* =================================================== */}
                         <DivImagesSoftSkills title='Pentest - Sql injection - Ransomware - Phishing' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={hack}></ImageSoftSkills>
@@ -218,7 +219,7 @@ function Home() {
                     <hr className='dashed' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true"/>
 
                     <ConteinerSoftskills data-aos="zoom" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
-                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Automação - </HtmlTag_p>
+                        <HtmlTag_p data-aos="zoom-in" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">Automação </HtmlTag_p>
                         {/* =================================================== */}
                         <DivImagesSoftSkills title='Linguagem de programação' data-aos="zoom-in-up" data-aos-delay={Math.floor(Math.random() * 500)} data-aos-once="true">
                             <ImageSoftSkills src={python}></ImageSoftSkills>

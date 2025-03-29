@@ -1,6 +1,9 @@
-import { useState } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+import { useState,useEffect } from "react";
 import { motion } from "framer-motion"; // Importando a biblioteca de animações
 import NavBar from "../../components/navbar/navbar";
+import NavMobile from "../../components/navBar/navBarMobile";
 import { AboutBody, AboutScreen, Container, Timeline, EventRight, Button, TitleConteinerAbout, Linha, EventLeft } from "./aboutStyles";
 import { HtmlTag_h1, HtmlTag_hr, HtmlTag_space_columm, HtmlTag_p } from '../../components/htmlTags/Tags_html';
 
@@ -8,12 +11,16 @@ const DownloadConcluido = 'Download Feito!';
 
 function About() {
     const [NomeBaixarCurriculo, setNomeBaixarCurriculo] = useState("Baixar CV");
+    useEffect(() => {
+        AOS.init({duration:2000})
+    },[])
 
     return (
         <AboutBody>
             <NavBar />
+            <NavMobile />
             <AboutScreen>
-                <TitleConteinerAbout>
+                <TitleConteinerAbout data-aos="fade-up" data-aos-delay={Math.floor(Math.random() * 500)}>
                     <HtmlTag_h1>Sobre mim - Minha trajetória</HtmlTag_h1>
                     <HtmlTag_p>
                         Um pouco sobre mim, e como cheguei até aqui.
@@ -60,17 +67,11 @@ function About() {
                                 )}
                             </motion.div>
                         ))}
-                        <HtmlTag_space_columm />
-                    </Timeline>
 
-                    
-                    <HtmlTag_space_columm />
-
-                    <HtmlTag_hr />
-                    <HtmlTag_space_columm />
                     <HtmlTag_p>
                         Saiba mais sobre certificações, cursos e experiências profissionais no meu currículo.
                     </HtmlTag_p>
+                    </Timeline>
                     <HtmlTag_space_columm />
                     <Button onClick={() => setNomeBaixarCurriculo(DownloadConcluido)} href='/src/assets/curriculo/curriculo.pdf' download>
                         {NomeBaixarCurriculo}

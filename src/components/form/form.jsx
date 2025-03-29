@@ -26,7 +26,7 @@ const ContactForm = () => {
     const [buttonText, setButtonText] = useState("Enviar");
 
     return (
-        <FormContainer onSubmit={handleSubmit}>
+        <FormContainer onSubmit={handleSubmit} data-aos="zoom-in-up"  data-aos-once="true" data-aos-duration="5000">
             <Title>Entre em contato</Title>
             <HtmlTag_hr></HtmlTag_hr>
             <Label >
