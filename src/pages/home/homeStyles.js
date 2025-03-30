@@ -6,6 +6,7 @@ export const HomeBody = styled.body`
     background-color: var(--corHome);
     display: flex;
     flex-direction: row;
+    overflow: hidden;
     @media (max-width: 1024px) {
         flex-direction: column;
     }
@@ -24,11 +25,11 @@ export const MainScreen = styled.main`
     justify-content: center;
     width: 100%;
     margin-left: 20%;
+    gap: 20px;
     color: var(--corTexto);
     background-color: var(--corHome);
     @media (max-width: 1024px) {
         margin-left: 0;
-        padding: 5%;
     }
     @media (max-width: 430px) {
         padding: 0;
@@ -43,7 +44,7 @@ export const ImageCapa = styled.section`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         height: 250px;
     }
     @media (max-width: 440px) {
@@ -66,17 +67,17 @@ export const ImagePerfil = styled.div`
     width: 250px;
     height: 250px;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 28%;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         width: 150px;
         height: 150px;
         top: 20%;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px)  {
         width: 150px;
         height: 150px;
-        top: 30%;
+        top: 25%;
     }
     @media (max-width: 440px) {
         width: 100px;
@@ -101,23 +102,23 @@ export const Sobremim = styled.div`
     gap: 8px;
     justify-content: center;
     height: 20vh;
-    padding-left: 40%;
-    @media (max-width: 834px) and (min-width: 800px) {
-        font-size: 8px;
+    padding-left: 20%;
+    @media (max-width: 1024px) and (min-width: 800px) {
+        font-size: 12px;
         padding-left: 60%;
         height: 12vh;
     }
-    @media (max-width: 768px){
-        font-size: 8px;
+   @media (max-width: 768px) {
+        font-size: 12px;
         padding-left: 60%;
         height: 12vh;
     }
     @media (max-width: 440px) {
-        font-size: 5px;
+        font-size: 9px;
         padding-left: 45%;
     }
     @media (max-width: 360px){
-        font-size: 5px;
+        font-size: 9px;
     }
 `;
 
@@ -128,12 +129,13 @@ export const ConteinerResumo = styled.section`
     width: 100%;
     gap: 20px;
     margin-top: 3%;
+    margin-bottom: 3%;
     color: #a5a5a5;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         padding-left: 25%;
         text-align: center;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         padding-left: 25%;
         text-align: center;
     }
@@ -155,14 +157,14 @@ export const ConteinerHabilidades = styled.section`
     grid-template-columns: repeat(1, 7fr);
     padding: 0 10%;
     width: 100%;
-    gap: 40px;
+    gap: 30px;
     margin-top: 3%;
     color: #a5a5a5;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         padding-left: 25%;
         text-align: center;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         padding-left: 25%;
         text-align: center;
     }
@@ -186,10 +188,10 @@ export const ConteinerSoftskills = styled.div`
     margin-top: 2%;
     place-items: center;
     gap: 20px;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         grid-template-columns: repeat(7, 1fr);
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         grid-template-columns: repeat(7, 1fr);
     }
     @media (max-width: 440px) {
@@ -214,10 +216,10 @@ export const DivImagesSoftSkills = styled.div`
     &:hover{
         transform: scale(1.1) !important;
     }
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         width: 60px;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         width: 50px;
     }
     @media (max-width: 440px) {
@@ -230,7 +232,7 @@ export const ImageSoftSkills = styled.img`
     height: 30px;
     transition: 0.2s ease-in;
     border-radius: 10px; 
-    @media (max-width: 834px) {
+    @media (max-width: 1024px) {
         width: 20px;
     }
 `;
@@ -242,7 +244,7 @@ export const ParagraphSoftSkills = styled.button`
     font-family: var(--fontPrincipal);
     border:none;
     background-color: transparent;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         font-size: 11px;
     }
 `;
@@ -255,16 +257,17 @@ export const ConteinerGoogleMaps = styled.section`
     gap: 20px;
     margin-top: 3%;
     color: #a5a5a5;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         padding-left: 25%;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         padding-left: 25%;
         width: 95%;
     }
     @media (max-width: 440px) {
-        padding: 0 5%;
+        padding: 0% 5%;
         text-align: center;
+        padding-bottom: 70px;
     }
 `;
 
@@ -275,6 +278,9 @@ export const GoogleMaps = styled.div`
     align-items: center;
     border: 0;
     justify-content: center;
+    @media (max-width: 440px) {
+        padding-bottom: 40px;
+    }
 `;
 
 export const Mapstyle = styled.iframe`
@@ -282,18 +288,17 @@ export const Mapstyle = styled.iframe`
     height: 500px;
     border: 0;
     border-radius: 20px;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         width: 800px;
         height: 300px;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         width: 600px;
         height: 200px;
     }
     @media (max-width: 440px) {
         padding: 0 5%;
         text-align: center;
-        margin-bottom: 3%;
     }
     
 `;

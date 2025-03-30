@@ -13,11 +13,11 @@ export const DivFloatBtn = styled.div`
     flex-direction: column;
     z-index: 1000;
     gap: 10px;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         top: 78%;
         right: 86%;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         top: 78%;
         right: 86%;
 

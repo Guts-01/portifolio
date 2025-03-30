@@ -31,11 +31,11 @@ export const TitleConteinerWork = styled.div`
     width: 100%;
     gap:10px;
     color: #a5a5a5;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         width: 75%;
         margin-left: 20%;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         width: 75%;
         margin-left: 20%;
     }
@@ -59,11 +59,11 @@ export const Container = styled.div`
         padding: 20px;
         text-align: center;
         color: #a5a5a5;
-        @media (max-width: 834px) and (min-width: 800px) {
+        @media (max-width: 1024px) and (min-width: 800px) {
             width: 70%;
             margin-left: 25%;
         }
-        @media (max-width: 768px){
+       @media (max-width: 768px) {
             width: 70%;
             margin-left: 25%;
         }
@@ -94,10 +94,10 @@ export const ServicesContainer = styled.div`
     width: 100%;
     gap: 30px;
     margin-bottom: 50px;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         grid-template-columns: 1fr 1fr;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         grid-template-columns: 1fr 1fr;
     }
 `;

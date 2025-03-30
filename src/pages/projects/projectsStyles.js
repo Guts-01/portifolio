@@ -4,6 +4,7 @@ export const ProjectsBody = styled.body`
     background-color: var(--corHome);
     display: flex;
     flex-direction: row;
+    overflow: hidden;
     @media (max-width: 1024px) {
         flex-direction: column;
     }
@@ -22,6 +23,9 @@ export const ProjectsScreen = styled.main`
         margin-left: 0;
         padding: 5%;
     }
+    @media (max-width: 440px){
+        padding-bottom: 80px;
+    }
 `;
 
 export const TitleConteinerProjetos = styled.div`
@@ -31,11 +35,11 @@ export const TitleConteinerProjetos = styled.div`
     width: 95%;
     gap:10px;
     color: #a5a5a5;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         margin-left: 20%;
         width: 75%;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         margin-left: 20%;
         width: 75%;
     }
@@ -62,13 +66,13 @@ export const ConteinerProjetosLeft = styled.section`
     gap: 10px;
     margin-top: 60px;
     margin-bottom: 60px;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         margin-left: 20%;
         margin-top: 220px;
         margin-bottom: 250px;
         width: 70%;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         margin-left: 20%;
         margin-top: 150px;
         margin-bottom: 250px;
@@ -99,13 +103,13 @@ export const ConteinerProjetosRight = styled.section`
     gap: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         margin-left: 20%;
         margin-top: 250px;
         margin-bottom: 250px;
         width: 70%;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         margin-left: 20%;
         margin-top: 150px;
         margin-bottom: 250px;
@@ -135,10 +139,10 @@ export const Divprojects = styled.div`
     height: 400px;
     gap: 40px;
     justify-content: space-around;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         flex-direction: column;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         flex-direction: column;
     }
     @media (max-width: 440px) {
@@ -203,10 +207,10 @@ export const DivText = styled.div`
     gap: 30px;
     width: 300px;
     color: #a5a5a5;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         margin-left: 22%; 
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         margin-left: 22%; 
     }
     @media (max-width: 440px) {

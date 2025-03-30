@@ -7,11 +7,20 @@ import { WorkBody, WorkScreen, Container, TitleConteinerWork,  ServicesContainer
 import { HtmlTag_h1, HtmlTag_hr, HtmlTag_p, HtmlTag_space_columm } from '../../components/htmlTags/Tags_html';
 import ContactForm from '../../components/form/form';
 
-const ContratarServico = 'Contratado!';
+const ContratarServico1 = 'Contratado!';
+const ContratarServico2 = 'Contratado!';
+const ContratarServico3 = 'Contratado!';
+const ContratarServico4 = 'Contratado!';
+const ContratarServico5 = 'Contratado!';
+const ContratarServico6 = 'Contratado!';
 
 function MyServices() {
-    ("Baixar CV");
-    const [NomeContratarServico, setNomeContratarServico] = useState("Contratar serviço");
+    const [NomeContratarServico1, setNomeContratarServico1] = useState("Contratar serviço");
+    const [NomeContratarServico2, setNomeContratarServico2] = useState("Contratar serviço");
+    const [NomeContratarServico3, setNomeContratarServico3] = useState("Contratar serviço");
+    const [NomeContratarServico4, setNomeContratarServico4] = useState("Contratar serviço");
+    const [NomeContratarServico5, setNomeContratarServico5] = useState("Contratar serviço");
+    const [NomeContratarServico6, setNomeContratarServico6] = useState("Contratar serviço");
 
     useEffect(() => {
         AOS.init({ duration: 2000 }); // Configurando a duração da animação
@@ -48,7 +57,7 @@ function MyServices() {
                                 Desenvolvimento de sites responsivos e otimizados para seu negócio.
                             </ServiceDescription>
                             
-                            <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Desenvolvimento%20de%20sites%20e%20Landing%20pages*' target='_blank'>{NomeContratarServico}</ServiceButton>
+                            <ServiceButton onClick={() => setNomeContratarServico1(ContratarServico1)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Desenvolvimento%20de%20sites%20e%20Landing%20pages*' target='_blank'>{NomeContratarServico1}</ServiceButton>
                         </Service>
 
                         <Service data-aos="zoom-in-down" data-aos-duration="5000" data-aos-once="true">
@@ -60,7 +69,7 @@ function MyServices() {
                                 Criação de projetos para automação de processos e testes para o seu sistema.
                             </ServiceDescription>
                             
-                            <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Automação%20de%20Processos%20e%20Testes*' target='_blank'>{NomeContratarServico}</ServiceButton>
+                            <ServiceButton onClick={() => setNomeContratarServico2(ContratarServico2)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Automação%20de%20Processos%20e%20Testes*' target='_blank'>{NomeContratarServico2}</ServiceButton>
                         </Service>
 
                         <Service data-aos="zoom-in-down"  data-aos-once="true" data-aos-duration="5000">
@@ -72,7 +81,7 @@ function MyServices() {
                                 Criação de aplicações web completas para a sua empresa ou negócio.
                             </ServiceDescription>
                             
-                            <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Criação%20de%20aplicações%20web*' target='_blank'>{NomeContratarServico}</ServiceButton>
+                            <ServiceButton onClick={() => setNomeContratarServico3(ContratarServico3)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Criação%20de%20aplicações%20web*' target='_blank'>{NomeContratarServico3}</ServiceButton>
                         </Service>
 
                         <Service data-aos="zoom-in-up"  data-aos-once="true" data-aos-duration="5000">
@@ -84,7 +93,7 @@ function MyServices() {
                                 Criação de projetos para consumo e conexão com APIs de terceiros.
                             </ServiceDescription>
                             
-                            <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Comsumo%20e%20conexão%20com%20APIs*' target='_blank'>{NomeContratarServico}</ServiceButton>
+                            <ServiceButton onClick={() => setNomeContratarServico4(ContratarServico4)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Comsumo%20e%20conexão%20com%20APIs*' target='_blank'>{NomeContratarServico4}</ServiceButton>
                         </Service>
 
                         <Service data-aos="zoom-in-up" data-aos-duration="5000" data-aos-once="true">
@@ -96,7 +105,7 @@ function MyServices() {
                                 Criação de lojas virtuais para o seu negócio ou Nicho de mercado.
                             </ServiceDescription>
                             
-                            <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*E-commerce*' target='_blank'>{NomeContratarServico}</ServiceButton>
+                            <ServiceButton onClick={() => setNomeContratarServico5(ContratarServico5)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*E-commerce*' target='_blank'>{NomeContratarServico5}</ServiceButton>
                         </Service>
 
                         <Service data-aos="zoom-in-up"  data-aos-once="true" data-aos-duration="5000">
@@ -108,7 +117,7 @@ function MyServices() {
                                 Trabalho como freelancer para empresas e pessoas físicas, com projetos de curto e longo prazo.
                             </ServiceDescription>
                             
-                            <ServiceButton onClick={() => setNomeContratarServico(ContratarServico)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Freelancer*' target='_blank'>{NomeContratarServico}</ServiceButton>
+                            <ServiceButton onClick={() => setNomeContratarServico6(ContratarServico6)} href='https://wa.me/5511915858636?text=Oi,%20Eu%20Gostaria%20de%20saber%20mais%20sobre%20este%20serviço:%20*Freelancer*' target='_blank'>{NomeContratarServico6}</ServiceButton>
                         </Service>
 
 

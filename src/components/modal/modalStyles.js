@@ -24,8 +24,8 @@ export const ConteinerEasterEgg = styled.div`
     display: flex;
     flex-direction: column;
     background-color: var(--corHome);
-    width:400px;
-    height: 400px;
+    width:300px;
+    height: 450px;
     transition: 0.5s;
     border-radius: 20px;
     border: 2px solid #303030;

@@ -31,11 +31,11 @@ export const TitleConteinerAbout = styled.div`
     width: 100%;
     gap:10px;
     color: #a5a5a5;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         margin-left: 20%;
         width: 75%;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         margin-left: 20%;
         width: 75%;
     }
@@ -63,7 +63,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         width: 100%;
         text-align: center;
         padding-left: 25%;
@@ -71,6 +71,9 @@ export const Container = styled.div`
     @media (max-width: 768px){
         width: 100%;
         text-align: start;
+    }
+    @media (max-width: 440px){
+        padding-bottom: 80px;
     }
     `;
 
@@ -84,14 +87,14 @@ export const Timeline = styled.div`
     position: relative;
     align-items: center;
     justify-content: space-around;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         width: 100%;
         justify-content: center;
         align-items: center;
         padding-left: 25%;
         text-align: center;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px){
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -121,10 +124,10 @@ export const Linha = styled.hr`
     left:50%;
     transform: translate(-50%, -50%);
     transition: 0.9s ease-in;
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         left: 65%;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         left: 65%;
     }
     @media (max-width: 440px) {
@@ -156,12 +159,12 @@ export const EventRight = styled.div`
     &:hover{
         transform: scale(1.1);
     }
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         width: 300px;
         right: 0;
         text-align: center;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         width: 300px;
         right: 0;
         text-align: center;
@@ -185,12 +188,12 @@ export const EventLeft = styled.div`
     &:hover{
         transform: scale(1.1);
     }
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         width: 300px;
         left: 0;
         text-align: center;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px)  {
         width: 300px;
         left: 0;
         text-align: center;
@@ -210,12 +213,12 @@ export const Button = styled.a`
     &:hover {
         transform: scale(1.1);
     }
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         width: 300px;
         text-align: center;
         margin-left: 25%;
     }
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         width: 300px;
         margin-left: 25%;
         text-align: center;
