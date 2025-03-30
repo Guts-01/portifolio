@@ -7,15 +7,16 @@ export const NavBarMobile = styled.nav`
     flex-direction: row;
     gap: 20px;
     height: 10vh;
-    top: 90vh;
-    padding: 30px;
     position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 9999;
+    padding: 30px;
     text-align: center; 
     max-width: 100%;
     width:100%;
     @media (max-width: 450px){
         display: flex;
-        z-index: 1000;
         justify-content: center;
 }`
 

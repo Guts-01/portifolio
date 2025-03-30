@@ -44,7 +44,7 @@ export const SectionsLinks = styled.a`
         transform: scale(1.1);
         opacity: 1;
     }
-    @media (max-width: 834px) and (min-width: 800px) {
+    @media (max-width: 1024px) and (min-width: 800px) {
         height: 4vh;
         gap: 5px;
         height: 4vh;
@@ -52,7 +52,7 @@ export const SectionsLinks = styled.a`
         font-size: 12px;
         padding: 5px;
     }
-    @media (max-width: 768px){
+   @media (max-width: 768px) {
         height: 4vh;
         gap: 5px;
         font-size: 12px;
