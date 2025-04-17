@@ -64,8 +64,8 @@ export const ConteinerProjetosLeft = styled.section`
     align-items: end;
     padding: 2% 10%;
     gap: 10px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 90px;
+    margin-bottom: 90px;
     @media (max-width: 1024px) and (min-width: 800px) {
         margin-left: 20%;
         margin-top: 220px;
@@ -101,8 +101,8 @@ export const ConteinerProjetosRight = styled.section`
     align-items: start;
     padding: 0 10%;
     gap: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 90px;
+    margin-bottom: 90px;
     @media (max-width: 1024px) and (min-width: 800px) {
         margin-left: 20%;
         margin-top: 250px;
