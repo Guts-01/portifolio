@@ -77,9 +77,6 @@ function NavBar() {
                 <SectionsFooter>
                     <p>	&#169; Copyrigth 2025</p>
                 </SectionsFooter>
-                <SectionsFooter>
-                    <HtmlTag_a> Desenvolvido por mim</HtmlTag_a>
-                </SectionsFooter>
             </FooterNavBar>
         </NavBarStyled>
     );
