@@ -7,13 +7,13 @@ import NavMobile from '../../components/navBar/navBarMobile';
 import { AboutBody, AboutScreen, Container, Timeline, EventRight, Button, TitleConteinerAbout, Linha, EventLeft } from "./aboutStyles";
 import { HtmlTag_h1, HtmlTag_hr, HtmlTag_space_columm, HtmlTag_p } from '../../components/htmlTags/Tags_html';
 
-const DownloadConcluido = 'Download Feito!';
+// const DownloadConcluido = 'Download Feito!';
 
 function About() {
-    const [NomeBaixarCurriculo, setNomeBaixarCurriculo] = useState("Baixar CV");
-    useEffect(() => {
-        AOS.init({duration:2000})
-    },[])
+    // const [NomeBaixarCurriculo, setNomeBaixarCurriculo] = useState("Baixar CV");
+    // useEffect(() => {
+    //     AOS.init({duration:2000})
+    // },[])
 
     return (
         <AboutBody>
