@@ -68,14 +68,14 @@ function About() {
                             </motion.div>
                         ))}
 
-                    <HtmlTag_p>
+{/*                     <HtmlTag_p>
                         Saiba mais sobre certificações, cursos e experiências profissionais no meu currículo.
                     </HtmlTag_p>
                     </Timeline>
                     <HtmlTag_space_columm />
                     <Button onClick={() => setNomeBaixarCurriculo(DownloadConcluido)} href='/src/assets/curriculo/curriculo.pdf' download>
                         {NomeBaixarCurriculo}
-                    </Button>
+                    </Button> */}
                 </Container>
             </AboutScreen>
         </AboutBody>
