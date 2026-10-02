@@ -95,23 +95,7 @@ export default function Home() {
             Entre em contato
           </a>
         </div>
-        <div className="shell map-container">
-          <iframe
-            title="Mapa de São Paulo, SP"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-46.82%2C-23.72%2C-46.43%2C-23.38&layer=mapnik&marker=-23.5505%2C-46.6333"
-            loading="lazy"
-            referrerPolicy="strict-origin-when-cross-origin"
-          />
-          <a
-            className="text-link"
-            href="https://www.openstreetmap.org/?mlat=-23.5505&mlon=-46.6333#map=11/-23.5505/-46.6333"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Abrir mapa completo
-            <span aria-hidden="true"> →</span>
-          </a>
-        </div>
+        
       </section>
     </main>
   );
