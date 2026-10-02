@@ -16,8 +16,36 @@ export default function About() {
       <header className="page-heading about-heading">
         <p className="eyebrow">Sobre mim</p>
         <h1>Minha trajetória profissional</h1>
-        <p>Conheça minha experiência, formação e áreas de atuação.</p>
+        <p>Conheça minha experiência, formação e áreas de atuação. a linha temporal apresenta um pouco da minha jornada na área.</p>
       </header>
+
+        <section
+        aria-labelledby="timeline-title"
+        className="about-section narrow"
+      >
+  
+        <ol className="timeline">
+          {timeline.map(({ date, text }) => (
+            <li key={date}>
+              <h3>{date}</h3>
+              <p>{text}</p>
+            </li>
+          ))}
+        </ol>
+
+      </section>
+
+            <section className="about-section narrow" aria-labelledby="download-title">
+          <a
+          className="button about-download"
+          href={resumePdf}
+          download="Alailton-Oliveira-Dias-Curriculo.pdf"
+          type="application/pdf"
+        >
+          <FaDownload aria-hidden="true" focusable="false" />
+          Baixar currículo em PDF
+        </a>
+      </section>
 
       <section className="about-section" aria-labelledby="profile-title">
         <h2 id="profile-title">Perfil profissional</h2>
@@ -83,10 +111,12 @@ export default function About() {
                 <h3>{course}</h3>
                 <p>{institution}</p>
                 <span>{period}</span>
+                
               </li>
             ))}
           </ul>
         </section>
+
         <section aria-labelledby="courses-title">
           <h2 id="courses-title">Cursos complementares</h2>
           <ul className="about-learning-list">
@@ -100,31 +130,6 @@ export default function About() {
         </section>
       </div>
 
-      <section
-        aria-labelledby="timeline-title"
-        className="about-section narrow"
-      >
-        <h2 id="timeline-title">Linha temporal da minha trajetória</h2>
-        <ol className="timeline">
-          {timeline.map(({ date, text }) => (
-            <li key={date}>
-              <h3>{date}</h3>
-              <p>{text}</p>
-            </li>
-          ))}
-        </ol>
-      </section>
-      <section className="about-section narrow" aria-labelledby="download-title">
-          <a
-          className="button about-download"
-          href={resumePdf}
-          download="Alailton-Oliveira-Dias-Curriculo.pdf"
-          type="application/pdf"
-        >
-          <FaDownload aria-hidden="true" focusable="false" />
-          Baixar currículo em PDF
-        </a>
-      </section>
     </main>
   );
 }
