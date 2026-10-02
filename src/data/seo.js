@@ -4,20 +4,20 @@ export const seo = {
   "/": {
     title: "Guto Oliveira | Desenvolvimento Web e Quality Assurance",
     description:
-      "Portfólio de Guto Oliveira: desenvolvimento web, automação de testes, Quality Assurance e projetos em tecnologia.",
+      "Meu portfólio: desenvolvimento web, automação de testes, Quality Assurance e projetos em tecnologia.",
   },
   "/about": {
-    title: "Sobre mim | Guto Oliveira",
+    title: "Sobre mim",
     description:
-      "Conheça a experiência profissional, as competências técnicas, a formação e os cursos de Guto Oliveira em QA, desenvolvimento e segurança da informação.",
+      "Conheça minhas experiências profissionais, as competências técnicas, a formação e os meus cursos em QA, desenvolvimento e segurança da informação.",
   },
   "/projects": {
-    title: "Projetos | Guto Oliveira",
+    title: "Meus projetos",
     description:
-      "Explore projetos de Guto Oliveira em desenvolvimento web, APIs, automação e experiências interativas.",
+      "Explore meus projetos em desenvolvimento web, APIs, automação e estudos em segurança da informação.",
   },
   "/services": {
-    title: "Serviços | Guto Oliveira",
+    title: "Serviços",
     description:
       "Serviços de desenvolvimento web, aplicações, integração com APIs e automação de processos e testes.",
   },

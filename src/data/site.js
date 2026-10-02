@@ -8,6 +8,8 @@ import ngoDesktop from "../assets/images/projects/Macbook-Air-passatempo-educati
 import ngoMobile from "../assets/images/projects/iPhone-13-PRO-passatempo-educativo-lp.vercel.app.png";
 import usersDesktop from "../assets/images/projects/Macbook-Air-robot-testes-web.vercel.app.png";
 import usersMobile from "../assets/images/projects/iPhone-13-PRO-robot-testes-web.vercel.app.png";
+import starwDesktop from "../assets/images/projects/Macbook-Air-wars-theta.vercel.app.webp";
+import starwMobile from "../assets/images/projects/iPhone-13-PRO-wars-theta.vercel.app.webp";
 
 export const navigation = [
   { to: "/", label: "Início" },
@@ -148,7 +150,7 @@ export const projects = [
       "Aplicação web para consultar preços de veículos na Tabela FIPE.",
     details:
       "A consulta é dividida em etapas: tipo de veículo, marca, modelo e ano. Ao final, a aplicação apresenta os detalhes em um cartão.",
-    stack: ["Flask", "Jinja2", "Python"],
+    stack: ["Flask", "Python"],
     desktop: fipeDesktop,
     mobile: fipeMobile,
     repo: "https://github.com/Guts-01/buscar-preco-fipe",
@@ -178,6 +180,19 @@ export const projects = [
     mobile: usersMobile,
     repo: "https://github.com/Guts-01/frontend-listar-usuarios",
     demo: "https://robot-testes-web.vercel.app",
+  },
+  {
+    id: "wars-site",
+    title: "Starw",
+    description:
+      "Site sobre um clã do warzone, com informações sobre o clã, armamento e regras.",
+    details:
+      "Criado para apresentar informações sobre um clã do Call of duty warzone, no qual eu participo.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    desktop: starwDesktop,
+    mobile: starwMobile,
+    repo: "https://github.com/Guts-01/WARS",
+    demo: "https://wars-theta.vercel.app/",
   },
 ];
 

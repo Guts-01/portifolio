@@ -19,7 +19,7 @@ export const experiences = [
   },
   {
     company: "Passatempo Educativo - ONG",
-    role: "Desenvolvimento web · Voluntário",
+    role: "Desenvolvimento web · voluntário",
     period: "2025 ",
     highlights: [
       "Desenvolvimento de uma landing page para a ONG Passatempo Educativo, com foco em Doar IR.",
@@ -27,9 +27,18 @@ export const experiences = [
       
     ],
   },
+  {
+    company: "Projetos pessoais - Fins educacionais",
+    role: "Desenvolvimento / Qualidade / Segurança · free-lancer, estudante",
+    period: "2023 - atual", 
+    highlights: [
+      "Desenvolvimento de aplicações web e automação de testes para fins educacionais, com foco em aprendizado e aprimoramento de habilidades técnicas.",
+      "Exploração de conceitos de segurança da informação, incluindo práticas de pentest e investigação digital.",
+      "Criação de projetos pessoais para demonstrar habilidades em desenvolvimento, integração com APIs e automação de processos.",
+    ],
+  },
 ];
 
-// A Home já apresenta as stacks principais; aqui ficam práticas e ferramentas adicionais do currículo.
 export const technicalCompetencies = [
   {
     category: "Práticas de qualidade",
@@ -62,12 +71,17 @@ export const education = [
   {
     course: "Análise e Desenvolvimento de Sistemas",
     institution: "Descomplica Faculdade Digital",
-    period: "2023 — 2026",
+    period: "✅ Concluido em 2026",
   },
   {
     course: "Desenvolvimento Web",
     institution: "Instituto da Oportunidade Social (IOS)",
-    period: "Concluído em 2023",
+    period: "✅ Concluído em 2023",
+  },
+  {
+    course: "Ensino Médio Completo",
+    institution: "Colégio Estadual Juvencio Amaral",
+    period: "✅ Concluído em 2021",
   },
 ];
 
