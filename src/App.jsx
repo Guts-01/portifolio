@@ -56,7 +56,7 @@ export default function App({ path = "/" }) {
     try {
       if (window.localStorage.getItem("theme") === "dark") setTheme("dark");
     } catch {
-      // O tema claro continua disponível quando o armazenamento está bloqueado.
+      // Se o armazenamento estiver bloqueado, o tema claro continua disponível.
     }
   }, []);
 
@@ -104,7 +104,7 @@ export default function App({ path = "/" }) {
             href="/"
             aria-label="Guto Oliveira, voltar ao início"
           >
-            Portifólio <span>Profissional</span>
+            Guto <span>Oliveira</span>
           </a>
           <nav aria-label="Navegação principal">
             <ul className="nav-list">

@@ -24,7 +24,6 @@ export const socialLinks = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/guto-oliveira-227580294/",
   },
-  { label: "Instagram", href: "https://www.instagram.com/guts.okx/" },
 ];
 
 export const skills = [
